@@ -6,6 +6,8 @@ const logger = require('morgan');
 
 const indexRouter = require('./src/routes/index');
 const formularioRouter = require('./src/routes/formulario');
+const req = require('express/lib/request');
+const res = require('express/lib/response');
 
 const app = express();
 
@@ -20,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/', formularioRouter);
+
 
 app.use(function(req, res, next) {
   next(createError(404));

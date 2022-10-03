@@ -3,6 +3,6 @@ const formularioController = require('../controllers/formularioController');
 
 const router = express.Router();
 
-router.get('/formulario', formularioController.index);
+router.get('formulario', formularioController.index);
 
 module.exports = router;
