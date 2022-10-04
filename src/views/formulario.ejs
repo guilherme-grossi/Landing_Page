@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="/css/formulario.css">
   <title>LandingPage Locate</title>
 </head>
 
@@ -25,6 +25,85 @@
   </header>
 
   <main class="main">
+
+    <div class="box">
+
+      <form>
+        <fieldset>
+          <legend>
+            <strong><u>FORMULARIO DO PEDIDO:</u></strong>
+          </legend>
+
+          <label for="produto">Produto</label>
+          <div>
+            <input type="radio" id="Pequeno" name="tamanho" value="Pequeno" required>
+            <label for="Pequeno">Pequeno</label>
+          </div>
+          <div>
+            <input type="radio" id="Medio" name="tamanho" value="Medio" required>
+            <label for="Medio">Médio</label>
+          </div>
+          <div>
+            <input type="radio" id="Grande" name="tamanho" value="Grande" required>
+            <label for="Grande">Grande</label>
+          </div>
+
+          <label>Retirada</label>
+
+          <div>
+            <input type="radio" id="Segunda" name="semana" value="Segunda" required>
+            <label for="Segunda">Segunda-Feira.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="Terça" name="semana" value="Terça" required>
+            <label for="Terça">Terça-Feira.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="Quarta" name="semana" value="Quarta" required>
+            <label for="Quarta">Quarta-Feira.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="Quinta" name="semana" value="Quinta" required>
+            <label for="Quinta">Quinta-Feira.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="Sexta" name="semana" value="Sexta" required>
+            <label for="Sexta">Sexta-Feira.</label>
+          </div>
+          <br>
+          <div>
+          <label for="fragil">Produto é frágil?</label>
+          <select name="fragil" id="fragil">
+           <option selected disabled>Selecione uma opção</option>
+           <option value="sim">Sim</option>
+           <option value="nao">Não</option>
+          </select>
+          </div>
+          <br>
+          <div>
+          <label for="periodo">Selecione o período para retirada:</label>
+          <select name="periodo" id="periodo">
+            <option selected disabled>Selecione</option>
+            <Option value="Manhã">Manhã: 09h às 12h</Option>
+            <Option value="Tarde">Tarde: 13h às 16h</Option>
+            <Option value="Noite">Noite: 16h às 19h</Option>
+          </select>
+         </div>
+
+          <label for="observacao">Observação:</label>
+          <textarea name="observacao" id="observacao" cols="45" rows="5"></textarea>
+
+          <button type="reset">Limpar Campos</button>
+          <button type="submit">Enviar</button>
+          
+        </fieldset>
+      </form>
+
+    </div>
   </main>
 
 </body>
